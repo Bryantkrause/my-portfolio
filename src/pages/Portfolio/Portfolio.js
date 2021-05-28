@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Portfolio() {
 	const classes = useStyles();
-
-	return (
+		return (
 		<div className={classes.root}>
 			<React.Fragment>
 				<CssBaseline />
@@ -38,27 +37,8 @@ export default function Portfolio() {
 						spacing={3}
 						maxWidth="sm"
 						style={{ marginTop: "25%" }}
-					>
-						<Grid item xs={6}>
-							<Paper className={classes.paper}>
-								<MediaCard />
-							</Paper>
-						</Grid>
-						<Grid item xs={6}>
-							<Paper className={classes.paper}>
-								<MediaCard />
-							</Paper>
-						</Grid>
-						<Grid item xs={6}>
-							<Paper className={classes.paper}>
-								<MediaCard />
-							</Paper>
-						</Grid>
-						<Grid item xs={6}>
-							<Paper className={classes.paper}>
-								<MediaCard />
-							</Paper>
-						</Grid>
+						>
+							<MediaCard/>
 					</Grid>
 				</Container>
 			</React.Fragment>
